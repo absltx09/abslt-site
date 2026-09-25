@@ -27,6 +27,19 @@ body {
     line-height: 1.7;
 }
 
+h1 {
+    font-family: var(--deco);
+}
+
+h3 {
+    font-family: var(--litur);
+}
+
+body .hero {
+    background: var(--red);
+    color: var(--ink);
+}
+
 nav {
     position: fixed;
     top: 0;
