@@ -9,7 +9,7 @@
     --txt:#f9e8ac;--txt2:rgba(249,232,172,.62);--txt3:rgba(249,232,172,.32);
     --border:rgba(249,232,172,.1);--bw:rgba(212,175,55,.25);
     --deco:'Italiana',Didot,Georgia,serif;
-    --litur:'Cormorant Garamond',Georgia,serif;
+    --litur:'Redaction',Georgia,serif;
     --sans:'Inter',system-ui,sans-serif;
     --mono:'IBM Plex Mono',ui-monospace,'Courier New',monospace;
 }
@@ -63,4 +63,8 @@ nav .links a:hover{
 
 nav .links a {
     color: var(--txt2);
+}
+
+body .definition {
+    font-family: var(--litur);
 }
