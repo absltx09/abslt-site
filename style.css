@@ -1,1 +1,66 @@
+@font-face {
+    font-family: 'Redaction';
+    src: url(./fonts/Redaction-Regular.woff2);
+}
 
+:root{
+    --ink:#151413;--cream:#f9e8ac;--gold:#d4af37;--red:#912925;
+    --ash:#6e6a64;--silver:#c9c6bf;
+    --txt:#f9e8ac;--txt2:rgba(249,232,172,.62);--txt3:rgba(249,232,172,.32);
+    --border:rgba(249,232,172,.1);--bw:rgba(212,175,55,.25);
+    --deco:'Italiana',Didot,Georgia,serif;
+    --litur:'Cormorant Garamond',Georgia,serif;
+    --sans:'Inter',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,'Courier New',monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ink);
+    color: var(--txt);
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 28px;
+    background: linear-gradient(180deg, rgba(21,20,19,.92), transparent)
+}
+
+nav .mark{
+    font-family: var(--deco);
+    font-size: 16px;
+    letter-spacing: .14em;
+    color: var(--gold);
+}
+
+nav .links{
+    font-family: var(--mono);
+    display: flex;
+    gap: 26px;
+    color: var(--txt2);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .14em;
+}
+
+nav .links a:hover{
+    color: var(--gold);
+}
+
+nav .links a {
+    color: var(--txt2);
+}
