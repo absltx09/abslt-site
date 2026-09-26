@@ -29,6 +29,7 @@ body {
 
 h1 {
     font-family: var(--deco);
+    color: var(--gold);
 }
 
 h3 {
@@ -37,6 +38,16 @@ h3 {
 
 body .hero {
     background: var(--red);
+    color: var(--ink);
+    min-height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+body .hero-h1 {
+    color: var(--ink);
+    font-family: var(--deco);
     color: var(--ink);
 }
 
