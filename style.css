@@ -121,9 +121,10 @@ body .definition {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
     width: fit-content;
+    padding: 25px;
 }
 
 .project-card {
@@ -132,7 +133,7 @@ body .definition {
     overflow: hidden;
     border: 1px solid var(--gold);
     transition: 0.3s;
-    width: fit-content;
+    width: 100%;
 }
 
 .project-card:hover{
@@ -159,4 +160,6 @@ body .definition {
 .abslt{
     color: var(--gold);
     font-family: var(--deco);
+    text-align: center;
+    text-shadow: 0 0 8px rgba(212,175,55,.75)
 }
