@@ -123,6 +123,7 @@ body .definition {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    width: fit-content;
 }
 
 .project-card {
@@ -153,4 +154,9 @@ body .definition {
 
 .project-info p {
     color: var(--txt2);
+}
+
+.abslt{
+    color: var(--gold);
+    font-family: var(--deco);
 }
