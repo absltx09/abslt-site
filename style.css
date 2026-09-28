@@ -31,10 +31,16 @@ h1 {
     font-family: var(--deco);
     color: var(--gold);
     text-align: center;
+    text-shadow: 0 0 8px rgba(212,175,55,.75)
 }
 
 h3 {
     font-family: var(--litur);
+}
+
+body .mono {
+    font-family: var(--mono);
+    color: var(--txt2);
 }
 
 body .hero {
@@ -111,4 +117,40 @@ nav .links a {
 
 body .definition {
     font-family: var(--litur);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: var(--ink);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--gold);
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 8px rgba(212,175,55,.75)
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    cursor: pointer;
+    background: var(--ink);
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project-info p {
+    color: var(--txt2);
 }
