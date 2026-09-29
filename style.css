@@ -163,3 +163,26 @@ body .definition {
     text-align: center;
     text-shadow: 0 0 8px rgba(212,175,55,.75)
 }
+
+body .contact{
+    align-items: center;
+    justify-content: space-between;
+}
+
+body .link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    width: 100%
+}
+
+body .link-btn{
+    font-family: var(--deco);
+    color: var(--gold);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-width: 2px;
+}
