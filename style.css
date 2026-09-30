@@ -157,6 +157,24 @@ body .definition {
     color: var(--txt2);
 }
 
+.about-container {
+    align-items: center;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-text{
+    width: 800px;
+}
+
+.about-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+}
+
 .abslt{
     color: var(--gold);
     font-family: var(--deco);
@@ -167,14 +185,15 @@ body .definition {
 body .contact{
     align-items: center;
     justify-content: space-between;
+    padding: 25px;
 }
 
 body .link-container{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 600px;
-    width: 100%
+    align-items: center;
+
 }
 
 body .link-btn{
@@ -185,4 +204,5 @@ body .link-btn{
     text-decoration: none;
     border: 1px solid;
     border-width: 2px;
+    width: 600px;
 }
