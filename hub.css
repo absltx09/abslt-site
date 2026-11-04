@@ -1,0 +1,33 @@
+@font-face { font-family: 'Redaction'; src: url(fonts/Redaction-Regular.woff2); }
+@font-face { font-family: 'Redaction'; src: url(fonts/Redaction-Italic.woff2); font-style: italic; }
+@font-face { font-family: 'Redaction 35'; src: url(fonts/Redaction_35-Regular.woff2); }
+@font-face { font-family: 'Redaction 70'; src: url(fonts/Redaction_70-Regular.woff2); }
+
+:root {
+    --ink:#151413;--cream:#f9e8ac;--gold:#d4af37;--red:#912925;
+    --ash:#6e6a64;--silver:#c9c6bf;
+    --txt:#f9e8ac;--txt2:rgba(249,232,172,.62);--txt3:rgba(249,232,172,.32);
+    --line: rgba(249,232,172, .14); --goldline: rgba(212, 175, 55, .35);
+    --border:rgba(249,232,172,.1);--bw:rgba(212,175,55,.25);
+    --deco:'Italiana',Didot,Georgia,serif;
+    --litur:'Redaction',Georgia,serif;
+    --sans:'Inter',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,'Courier New',monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth;}
+body {
+    margin: 0; background: var(--ink); color: var(--cream);
+    font: 300 16px/1.7 var(--sans);
+    overflow-x: hidden;
+}
+a { color: var(--gold) }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+section { padding: 88px 0; border-top: 1px solid var(--line); }
+
+.mono { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--txt2); }
+h2 { font-family: var(--litur); font-weight: 400; font-size: 40px; line-height: 1.1; margin: 8px 0 24px; }
+h3 { font-family: var(--litur); font-weight: 400; font-size: 24px; margin: 0 0 8px; }
