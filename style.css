@@ -31,7 +31,6 @@ h1 {
     font-family: var(--deco);
     color: var(--gold);
     text-align: center;
-    text-shadow: 0 0 8px rgba(212,175,55,.75)
 }
 
 h3 {
@@ -112,8 +111,10 @@ nav .links a:hover{
 }
 
 nav .links a {
-    color: var(--txt2);
+    color: var(--txt2); text-decoration: none;
 }
+
+nav .links a[aria-current] { color: var(--gold); }
 
 body .definition {
     font-family: var(--litur);
