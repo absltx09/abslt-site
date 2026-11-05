@@ -139,6 +139,7 @@ nav .links a[aria-current] { color: var(--gold); }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    padding-bottom: 24px;
 }
 .door {
     border: 1px solid var(--gold);
@@ -153,9 +154,8 @@ nav .links a[aria-current] { color: var(--gold); }
 }
 .door:hover{
     transform: translateY(-10px);
-    box-shadow: 0 0 8px rgba(145,41,37,.75);
-    color: var(--red);
-    border-color: var(--red);
+    box-shadow: 0 0 8px rgba(212,175,55,.75);
+    border-color: var(--gold);
 }
 .door .p { color: var(--txt2); margin: 0 0 18px; }
 .door .go {
@@ -165,4 +165,26 @@ nav .links a[aria-current] { color: var(--gold); }
     letter-spacing: .14em;
     text-transform: uppercase;
     color: var(--gold);
+}
+.door.soon {
+    border-style: dashed;
+    border-color: var(--goldline);
+}
+.door.soon .go { color: var(--txt3); }
+.tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+}
+.tag.live { color: var(--gold); }
+.tag.archived { color: var(--txt2); }
+.tag.later { color: var(--txt3); }
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    ol.rules { padding-left: 1.2em; margin: 0; }
 }
